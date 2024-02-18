@@ -1,0 +1,23 @@
+{
+  "name": "handsonnosql",
+  "version": "1.0.0",
+  "description": "rutgers ece452 nosql demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tangbao/ECE452-HandsOnNoSQL.git"
+  },
+  "author": "tangbao",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tangbao/ECE452-HandsOnNoSQL/issues"
+  },
+  "homepage": "https://github.com/tangbao/ECE452-HandsOnNoSQL#readme",
+  "dependencies": {
+    "firebase-admin": "^12.0.0",
+    "mongodb": "6.3.0"
+  }
+}
