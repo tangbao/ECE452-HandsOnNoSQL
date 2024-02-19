@@ -13,14 +13,14 @@ const db = getFirestore();
 
 // add
 
-const docRef = db.collection('student').doc();
+// const docRef = db.collection('student').doc();
 
-docRef.set({
-  first: 'aaa',
-  last: 'bbb',
-  email: 'aaa.bbb@rutgers.edu'
-}
-);
+// docRef.set({
+//   first: 'ccc',
+//   last: 'ddd',
+//   email: 'ccc.ddd@rutgers.edu'
+// }
+// );
 
 // read all data
 

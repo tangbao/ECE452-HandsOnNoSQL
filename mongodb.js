@@ -1,6 +1,6 @@
 
 const { MongoClient, ServerApiVersion } = require('mongodb');
-const uri = "mongodb+srv://tb:<password>@cluster0.osvojq0.mongodb.net/?retryWrites=true&w=majority";
+const uri = "mongodb+srv://tb:<password>@cluster0.beobayy.mongodb.net/?retryWrites=true&w=majority";
 
 const client = new MongoClient(uri, {
   serverApi: {
@@ -23,12 +23,12 @@ run().catch(console.dir);
 
 // insert
 
-async function createListing(client, newListing){
-    const result = await client.db("ece452demo2").collection("student").insertOne(newListing);
+async function createStudent(client, newStudent){
+    const result = await client.db("project").collection("student").insertOne(newStudent);
     console.log(`New student created with the following id: ${result.insertedId}`);
 }
 
-createListing(client,
+createStudent(client,
     {
         name: "aaa bbb",
         email: "aaa.bbb@rutgers.edu"
@@ -37,8 +37,8 @@ createListing(client,
 
 // query
 
-// async function findOneListingByName(client, nameOfStudent) {
-//     const result = await client.db("ece452demo2").collection("student").findOne({ name: nameOfStudent });
+// async function findOneStudentByName(client, nameOfStudent) {
+//     const result = await client.db("project").collection("student").findOne({ name: nameOfStudent });
 
 //     if (result) {
 //         console.log(`Found a student in the collection with the name '${nameOfStudent}':`);
@@ -48,4 +48,4 @@ createListing(client,
 //     }
 // }
 
-// findOneListingByName(client, "aaa bbb");
+// findOneStudentByName(client, "aaa bbb");
